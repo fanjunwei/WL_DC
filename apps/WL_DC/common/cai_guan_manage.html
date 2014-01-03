@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>点餐登录</title>
+<title>餐馆管理</title>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" href="images/favicon.png">
@@ -17,20 +17,36 @@
 <body style="display: none;">
 	<div data-role="page" id="page">
 		<div data-role="header" id="header" data-position="fixed" >
-			<h2>点餐登录</h2>
+			<h2>餐馆管理</h2>
 		</div>
 		<div data-role="content">
 		<br/>
-			<ul data-role="listview" id="listview" data-inset="true">
-				<li id="listitem"><label for="text">用户名：</label><input
-					type="text" name="text" id="text"></li>
-				<li id="listitem0"><label for="text0">密码：</label><input
-					type="text" name="text0" id="text0"></li>
-			</ul>
+		<ul data-role="listview" id="listview" data-inset="true">
+			
+			<li id="listitem">
+			<label for="name">名称</label><input type="text" name="name"
+				id="name">
+			</li>
+			<li id="listitem">
+			<label for="name">地址</label><input type="text" name="name"
+				id="name">
+			</li>
+			<li id="listitem">
+			<label for="name">电话</label><input type="text" name="name"
+				id="name">
+			</li>
+		</ul>
+		<a href="#" data-role="button" id="btn_ok">确定</a> 
+		<a href="#" data-role="button" id="btn_cancel">取消</a>
 		</div>
-		<a href="yuan_gong_manage.html" data-role="button" id="button">登录</a>
+		
 		<div data-role="footer" data-position="fixed" id="footer">
-			<label style="font-size:10px">版权所有©鲤鱼小组 2014</label>
+			<div data-role="navbar" id="navbar">
+				<ul>
+					<li><a href="yuan_gong_manage.html">员工</a></li>
+					<li><a href="#" class="ui-btn-active" id="item">餐馆</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	
