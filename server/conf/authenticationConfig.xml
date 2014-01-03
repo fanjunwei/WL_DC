@@ -80,7 +80,7 @@
             <parameter name="embedded-pki-bridge-ca-p12-file-path" value="/opt/ssl_ca/ca.p12"/> 
             <parameter name="embedded-pki-bridge-ca-p12-password" value="capassword" />
     	</realm -->
-    	
+
 	</realms>
 
 	<loginModules>

@@ -1,1 +1,13 @@
-/bin
+/bin/
+/apps/WL_DC/android/native/assets/
+/apps/WL_DC/android/native/bin/
+/apps/WL_DC/android/native/libs/uicandroid.jar
+/apps/WL_DC/ipad/native/Settings.bundle/
+/apps/WL_DC/ipad/native/Tealeaf/
+/apps/WL_DC/ipad/native/worklight.plist
+/apps/WL_DC/ipad/native/www/
+/apps/WL_DC/iphone/native/Settings.bundle/
+/apps/WL_DC/iphone/native/Tealeaf/
+/apps/WL_DC/iphone/native/worklight.plist
+/apps/WL_DC/iphone/native/www/
+/apps/WL_DC/android/native/bin/

@@ -8,4 +8,5 @@ Messages = {
 	// usernameLabel : "Username:",
 	// passwordLabel : "Password:",
 	// invalidUsernamePassword : 'Invalid username or password.' 
+		usernameLabel : "Username:",
 };
