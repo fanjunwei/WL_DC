@@ -5,18 +5,18 @@
     US Government Users Restricted Rights - Use, duplication or
     disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 -->
-<wl:adapter name="login"
+<wl:adapter name="meal"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:wl="http://www.worklight.com/integration"
 	xmlns:http="http://www.worklight.com/integration/http">
 
-	<displayName>login</displayName>
-	<description>login</description>
+	<displayName>manage</displayName>
+	<description>manage</description>
 	<connectivity>
 		<connectionPolicy xsi:type="http:HTTPConnectionPolicyType">
 			<protocol>http</protocol>
-			<domain>www.7manba.com</domain>
-			<port>80</port>	
+			<domain>127.0.0.1</domain>
+			<port>8000</port>	
 			<!-- Following properties used by adapter's key manager for choosing specific certificate from key store  
 			<sslCertificateAlias></sslCertificateAlias> 
 			<sslCertificatePassword></sslCertificatePassword>
@@ -24,10 +24,6 @@
 		</connectionPolicy>
 		<loadConstraints maxConcurrentConnectionsPerNode="2" />
 	</connectivity>
-
-	<procedure name="getStories"/>
-
-	<procedure name="getStoriesFiltered"/>
-	<procedure name="login" />
+	<procedure name="getAllUser"></procedure>
 	
 </wl:adapter>

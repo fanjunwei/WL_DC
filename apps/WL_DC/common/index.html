@@ -15,28 +15,33 @@
 <script src="jqueryMobile/jquery.mobile-1.4.0.js"></script>
 </head>
 <body style="display: none;">
-	<div data-role="page" id="page">
-		<div data-role="header" id="header" data-position="fixed" >
+	<div data-role="page" id="login">
+		<div data-role="header" id="header" data-position="fixed">
 			<h2>点餐登录</h2>
 		</div>
 		<div data-role="content">
-		<br/>
+
+			<br />
 			<ul data-role="listview" id="listview" data-inset="true">
 				<li id="listitem"><label for="username">用户名：</label><input
 					type="text" name="username" id="username"></li>
 				<li id="listitem0"><label for="password">密码：</label><input
 					type="password" name="password" id="password"></li>
 			</ul>
+			<label for="flip">登录模式</label> <select name="flip" id="flip"
+				data-role="slider"><option value="off">员工</option>
+				<option value="on">管理</option>
+			</select> <a href="#" data-role="button" id="btn_login">登录</a>
 		</div>
-		<a href="#" data-role="button" id="btn_login">登录</a>
+
 		<div data-role="footer" data-position="fixed" id="footer">
-			<label style="font-size:10px">版权所有©鲤鱼小组 2014</label>
+			<label style="font-size: 10px">版权所有©鲤鱼小组 2014</label>
 		</div>
 	</div>
-	
 	<script src="js/initOptions.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/messages.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/httpUtil.js"></script>
 </body>
 </html>

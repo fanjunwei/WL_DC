@@ -5,6 +5,7 @@
         <wb-resource deploy-path="/" source-path="/apps/WL_DC/iphone"/>
         <wb-resource deploy-path="/" source-path="/apps/WL_DC/android"/>
         <wb-resource deploy-path="/" source-path="/apps/WL_DC/ipad"/>
+        <wb-resource deploy-path="/" source-path="/apps/WL_DC/desktopbrowser"/>
         <property name="context-root" value="WL_DC_P"/>
     </wb-module>
 </project-modules>
