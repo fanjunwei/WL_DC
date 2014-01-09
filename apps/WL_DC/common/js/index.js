@@ -17,7 +17,7 @@ $('#btn_login').click(function(){
 
 function loginCallback(result)
 {
-	saveCookies(result);
+	saveCookies(result.invocationResult);
 	if(result.invocationResult.success){
 		$.mobile.changePage("EmployeeList.html");
 	}

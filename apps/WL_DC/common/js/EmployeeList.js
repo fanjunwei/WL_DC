@@ -6,6 +6,7 @@ function getEmployeeList(){
 	var invocationData = {  
             adapter : 'meal',
             procedure : 'getAllUser',
+            parameters:[cookies],
     };
 	WL.Client.invokeProcedure(invocationData, {
 		onSuccess:getEmployeeListCallback,

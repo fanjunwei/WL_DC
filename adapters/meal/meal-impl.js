@@ -29,11 +29,12 @@
  *  } 
  */
 appname='meal';
-function getAllUser(){
+function getAllUser(cookies){
 	  var input = {  
 		        method : 'get',
 		        returnedContentType : 'json',  
 		        path : appname+"/getAllUser/",
+		        cookies:cookies,
 		    }; 
 	  return WL.Server.invokeHttp(input);  
 }
