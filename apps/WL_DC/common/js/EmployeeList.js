@@ -3,7 +3,6 @@
  */
 var employeeList=[];
 function getEmployeeList(){
-	alert(cookies.toString());
 	var invocationData = {  
             adapter : 'meal',
             procedure : 'getAllUser',
@@ -17,6 +16,7 @@ function getEmployeeList(){
 
 function getEmployeeListCallback(result)
 {
+	
 	if(result.invocationResult.success){
 		var html=[];
 		employeeList=result.invocationResult.result;
@@ -31,7 +31,7 @@ function getEmployeeListCallback(result)
 			html.push('</li>');
 		}
 		$('#lstEmployee').html(html.join(""));
-		$("div[data-role=content] ul").listview('refresh');
+		$("#lstEmployee").listview('refresh');
 	}
 	else{
 		WL.SimpleDialog.show('提示',result.invocationResult.message,[{
@@ -39,5 +39,5 @@ function getEmployeeListCallback(result)
 		}]);
 	}
 }
-getEmployeeList();
+$("#EmployeeList").on( "pageshow", function( event,ui ) { getEmployeeList(); });
 
