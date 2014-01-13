@@ -3,10 +3,11 @@
  */
 var employeeList=[];
 function getEmployeeList(){
+	alert(cookies.toString());
 	var invocationData = {  
             adapter : 'meal',
             procedure : 'getAllUser',
-            parameters:[cookies],
+            parameters:cookies,
     };
 	WL.Client.invokeProcedure(invocationData, {
 		onSuccess:getEmployeeListCallback,
