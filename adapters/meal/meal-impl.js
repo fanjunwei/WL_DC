@@ -38,5 +38,15 @@ function getAllUser(cookies){
 		    }; 
 	  return WL.Server.invokeHttp(input);  
 }
+function saveUserInfo(info,cookies){
+	  var input = {  
+		        method : 'post',
+		        returnedContentType : 'json',  
+		        path : appname+"/saveUserInfo/",
+		        cookies:cookies,
+		        parameters:info,
+		    }; 
+	  return WL.Server.invokeHttp(input);  
+}
 
 

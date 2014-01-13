@@ -1,20 +1,25 @@
 
 <div data-role="page" id="Employee">
- 	<div data-role="header" id="header" >
+	<div data-role="header" id="header">
 		<a href="" data-rel="back">返回</a>
-		<h2>员工管理</h2>
+		<h2 ><span id="e_title">员工修改</span></h2>
 	</div>
 	<br />
 	<ul data-role="listview" id="lstEmployee" data-inset="true">
 
-		<li id="listitem"><label for="name">姓名</label><input type="text"
-			name="name" id="name"></li>
-		<li id="listitem"><label for="name">用户名</label><input type="text"
-			name="name" id="name"></li>
-		<li id="listitem"><label for="name">密码</label><input type="text"
-			name="name" id="name"></li>
+		<li><label for="e_username">用户名</label><input type="text"
+			name="username" id="e_username"></li>
+			
+		<li><label for="e_truename">姓名</label><input type="text"
+			name="truename" id="e_truename"></li>
+			
+		<li><label for="tel">电话</label><input type="text" name="tel"
+			id="e_tel"></li>
+			
+		<li><label><input type="checkbox" name="is_active"
+				id="e_is_active" checked="checked">在职</label></li>
 	</ul>
-	<a href="#" data-role="button" id="btn_ok">确定</a>
+	<a href="#" data-role="button" id="btn_saveUserInfo">确定</a>
 	<div data-role="footer" data-position="fixed" id="footer">
 		<div data-role="navbar" id="navbar">
 			<ul>

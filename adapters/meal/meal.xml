@@ -25,5 +25,5 @@
 		<loadConstraints maxConcurrentConnectionsPerNode="2" />
 	</connectivity>
 	<procedure name="getAllUser"></procedure>
-	
+	<procedure name="saveUserInfo"></procedure>
 </wl:adapter>
